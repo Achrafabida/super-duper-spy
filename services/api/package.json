@@ -1,10 +1,10 @@
 {
-  "name": "api",
+  "name": "super-duper-spy-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --watch src -e js,ts,json --exec \"ts-node src/index.ts\"",
+    "dev": "nodemon --inspect=0.0.0.0 src/index.ts",
     "build": "tsup src/index.ts --format cjs --clean",
     "start": "node dist/index.js",
     "lint": "eslint src"
@@ -24,14 +24,16 @@
     "eslint-plugin-spellcheck": "^0.0.20",
     "nodemon": "^2.0.21",
     "pino-http-print": "^3.1.0",
+    "prisma": "^4.11.0",
     "ts-node": "^10.9.1",
-    "tsconfig-paths": "^4.1.2",
     "tsup": "^6.6.3",
     "typescript": "*"
   },
   "dependencies": {
+    "@prisma/client": "^4.11.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "http-status": "^1.6.2",
     "pino-http": "^8.3.3"
   }
 }

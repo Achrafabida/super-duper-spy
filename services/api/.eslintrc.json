@@ -23,7 +23,7 @@
             "identifiers": true,
             "templates": true,
             "skipWords": [
-                "healthcheck","req"
+                "healthcheck","req","prisma","uptime"
             ],
             "skipIfMatch": [
                 "http://[^s]*",

@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "API: Attach to api in container",
+        "type": "node",
+        "request": "attach",
+        // VS Code default debug port is 9229. Feel free to change it you are
+        // running mulitple applications in different VS Code windows. If you
+        // want to change the port, make sure to update the script, i.e.,
+        // "start:inspect": "nodemon --inspect=1234 src/index.ts",
+        "port": 9229,
+        // If you make changes to your code and save changes, nodemon will
+        // automatically restart your server. In a similar way, you can restart
+        // the debugger. If "restart" is set to false, then every time you save
+        // new changes to your code while running nodemon, you will need
+        // to re-run the debugger
+        "restart": true,
+        "localRoot": "${workspaceFolder}/services/api/src",
+        "remoteRoot": "/app/src"
+        
+
+      }
+    ]
+  }

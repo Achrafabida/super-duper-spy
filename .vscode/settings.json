@@ -1,9 +1,4 @@
 {
-    "cSpell.words": [
-        "healthcheck",
-        "pino",
-        "tsup"
-    ],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
